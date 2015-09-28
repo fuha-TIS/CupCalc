@@ -1,0 +1,2 @@
+# CupCalc
+TIS projekt
