@@ -2,7 +2,7 @@
  - vychádza z kalendára na stránke, ale zahŕňa aj špecifiká nášho projektu
 
 12.10.2015, 20:00 Katalóg požiadaviek - všetci
- - stretneme sa so zadávateľom a prediskutujeme s ním požiadavky na projekt, na základe ktorých vytvoríme tento katalóg
+ - stretneme sa so zadávateľom a prediskutujeme s ním požiadavky na projekt, na základe ktorých vytvoríme katalóg
 
 19.10.2015, 20:00 Konceptuálna analýza - všetci 
  - zadefinujeme  požiadavky systému, základné procesy a dáta
@@ -12,10 +12,22 @@
  - vypracujeme dátový model, v ktorom budú uchované údaje
 
 4.11.2015, 12:20 Návrh - všetci 
+ - vytvoríme podrobný návrh projektu, kde pomocou diagramov zobrazíme, ako bude vyzerať riešenie celého softvéru
+ 
 11.11.2015, 20:20 Podrobná špecifikácia komponentov - všetci
+ - vytvoríme dokument, ktorý bude slúžiť pre nás, vývojárov, v ktorom podrobne zadefinujeme triedy, metódy a algoritmy
+ 
 18.11.2015, 20:00 Hotové komponenty, 1. verzia - všetci 
-25.11.2015, 20:00 Hotové komponenty s dokumentáciou - všetci 
+ - nahráme prvú verziu fungujúceho softvéru po častiach, spolu s komentármi jednotlivých častí
+
+25.11.2015, 20:00 Hotové komponenty s dokumentáciou - všetci
+ - dorobíme podrobnú dokumentáciu k vyššie spomínanej prve verzii projektu
+ - doplníme projekt o súbor, v ktorom bude popis zmien oproti pôvodnej špecifikácii
+
 2.12.2015, 20:00 Integrované dielo s dokumentáciou - všetci 
+ - integrujeme jednotlivé komponenty do jedného funkčného softvéru
+ - vytvoríme inštalačnú a používateľskú príručku
+ 
 9.12.2015, 20:00 Výsledok testovania - všetci 
 16.12.2015, 20:00 Záznam z odovzdania a predvedenia diela zadávateľovi - všetci
 12.01.2016, 12:00 Vlastné zhodnotenie diela, návrhy na zmeny v ďalšej verzii, zhodnotenie vlastnej tímovej práce - všetci 
