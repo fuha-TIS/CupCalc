@@ -1,0 +1,75 @@
+PLÁN PROJEKTU
+
+
+KALENDÁR
+
+5.10.2015, 20:00 Plán projektu - všetci
+ - vychádza z kalendára na stránke, ale zahŕňa aj špecifiká nášho projektu
+
+12.10.2015, 20:00 Katalóg požiadaviek - všetci
+ - stretneme sa so zadávateľom a prediskutujeme s ním požiadavky na projekt, na základe ktorých vytvoríme katalóg
+
+19.10.2015, 20:00 Konceptuálna analýza - všetci 
+ - zadefinujeme  požiadavky systému, základné procesy a dáta
+ 
+26.10.2015, 20:00 Analýza technológií, dekompozícia a dátový model - všetci 
+ - navrhneme rozdelenie projektu na časti, vrátane ich vzájomnej komunikácie
+ - vypracujeme dátový model, v ktorom budú uchované údaje
+
+4.11.2015, 12:20 Návrh - všetci 
+ - vytvoríme podrobný návrh projektu, kde pomocou diagramov zobrazíme, ako bude vyzerať riešenie celého softvéru
+ 
+11.11.2015, 20:20 Podrobná špecifikácia komponentov - všetci
+ - vytvoríme dokument, ktorý bude slúžiť pre nás, vývojárov, v ktorom podrobne zadefinujeme triedy, metódy a algoritmy
+ 
+18.11.2015, 20:00 Hotové komponenty, 1. verzia - všetci 
+ - nahráme prvú verziu fungujúceho softvéru po častiach, spolu s komentármi jednotlivých častí
+
+25.11.2015, 20:00 Hotové komponenty s dokumentáciou - všetci
+ - dorobíme podrobnú dokumentáciu k vyššie spomínanej prve verzii projektu
+ - doplníme projekt o súbor, v ktorom bude popis zmien oproti pôvodnej špecifikácii
+
+2.12.2015, 20:00 Integrované dielo s dokumentáciou - všetci 
+ - integrujeme jednotlivé komponenty do jedného funkčného softvéru
+ - vytvoríme inštalačnú a používateľskú príručku
+ 
+9.12.2015, 20:00 Výsledok testovania - všetci 
+ - doladíme aplikáciu, vytvoríme testy, ktoré následne spustíme
+ - vytvoríme dokumentáciu k týmto testom a ladeniu
+
+16.12.2015, 20:00 Záznam z odovzdania a predvedenia diela zadávateľovi - všetci
+ - pred týmto dátumom sa stretneme so zadávateľom a predvedieme mu projekt, následne spíšeme záznam o stretnutí
+
+12.01.2016, 12:00 Vlastné zhodnotenie diela, návrhy na zmeny v ďalšej verzii, zhodnotenie vlastnej tímovej práce - všetci
+ - stretneme sa, prediskutujeme celý projekt, zapíšeme si postrehy, problémy a zaujímavosti, na ktoré sme narazili
+ 
+19.01.2016, 12:00 kompletná Záverečná správa - všetci 
+ - vytvoríme prehľadný report, ktorý bude zahŕnať všetky doposiaľ vytvorené dokumenty
+
+
+ZOZNAM VÝSTUPOV PROJEKTU
+
+ - plán projektu + ganttov diagram
+ - katalóg požiadaviek + konceptuálna analýza
+ - analýza projektu po častiach + dátový model
+ - komponenty projektu + dokumentácia
+ - funkčný projekt + dokumentácia
+ - dokument opisujúci proces testovania projektu
+ - zápisnica zhotovená pri predvádzaní projektu
+ - výsledné zhodnotenie, návrhy a zmeny
+ - záverečný report
+
+
+GANTTOV DIAGRAM (v textovej forme)
+
+1. Prvy navrh GUI                         10/05/2015 -	10/09/2015	 	 
+2. Konzultacie so zadavatelom             10/12/2015 -	10/13/2015	 	 
+3. Prve pokusy o jadro programu           10/14/2015 -	10/19/2015	 	 
+4. Konzultacie so zadavatelom (2)         10/19/2015 -	10/20/2015	 	 
+5. Dodatocna uprava jadra programu        10/20/2015 -	10/30/2015	 	 
+6. Refactoring (maintance)                10/30/2015 -	11/05/2015	 	 
+7. Prepojit web applikaciu s jadrom       11/05/2015 -	11/13/2015	 	 
+8. Re: Refactoring                        11/13/2015 -	11/20/2015
+
+PS
+(plán projektu sa môže v priebehu meniť)
