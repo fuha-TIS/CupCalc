@@ -19,8 +19,14 @@ Pritomny: David Koszeghy, David Jambor, Jakub Bician
 
 **Popis:** 
 ```
-Zapisnica prveho stretnutia Fuha-TIS timu, rozhodenie prvych uloch a diskusia katalogu poziadaviek.
-Mame problem so zadavatelom, neodpoveda na emaily, bez odpovede sa nevieme posunut dalej s katalogom poziadaviek a specifikacie, problem bude riesit David K. opakovanym pokusom kontaktovat zadavatela. Vo volnej diskusii sme dospeli k zaveru pouzivat Python kniznice na parsovanie vstupnych dat. BeautifulSoap4.
+Zapisnica prveho stretnutia Fuha-TIS timu,
+rozhodenie prvych uloch a diskusia katalogu poziadaviek.
+Mame problem so zadavatelom, neodpoveda na emaily,
+bez odpovede sa nevieme posunut dalej s katalogom poziadaviek
+a specifikacie, problem bude riesit David K.
+opakovanym pokusom kontaktovat zadavatela. Vo volnej diskusii 
+sme dospeli k zaveru pouzivat Python kniznice na parsovanie 
+vstupnych dat. BeautifulSoap4.
 ```
 **Plan uloh na dalsi tyzden**
 - [ ] Katalog poziadaviek - vsetci
