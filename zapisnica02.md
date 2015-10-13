@@ -31,9 +31,8 @@ spracuje jeden uml diagram aby sme sa presvedcili ze
 s nimi vieme pracovat.
 ```
 **Plan uloh na dalsi tyzden**
-  [ ] Konceptualna analyza - 
-	[ ] Use case diagram - David K.
-	[ ] Entitno-relačný diagram - Jakub B.
-	[ ] Stavový diagram - David J.
-  [ ] Kontaktovat p.Petrovica ohladom modwsgi,django
-
+-  [ ] Konceptualna analyza - 
+-	[ ] Use case diagram - David K.
+-	[ ] Entitno-relačný diagram - Jakub B.
+-	[ ] Stavový diagram - David J.
+-   [ ] Kontaktovat p.Petrovica ohladom modwsgi,django
