@@ -1,7 +1,7 @@
 
 
-# Zapisnica 01
-# 6.10.2015
+# Zapisnica 02
+# 13.10.2015
 
 Pritomny: David Koszeghy, David Jambor, Jakub Bician
 
