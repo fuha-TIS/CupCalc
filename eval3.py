@@ -7,7 +7,7 @@ class Evaluation3():
         self.evalTable = evalTable
         
         self.outputList = self.evall()
-        print(self.outputList)
+        #print(self.outputList)
 
     def evall(self):
         ''' Definition of evaluation
