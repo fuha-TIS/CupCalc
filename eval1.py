@@ -16,13 +16,13 @@ class Evaluation1():
             self.winner = min ( runner[1] for runner in inputList)
 
             self.outputList = self.first()
-            print (self.outputList)
+            #print (self.outputList)
             
         elif evalType == 2:
             self.winner = min ( runner[1] for runner in inputList)
 
             self.outputList = self.second()
-            print (self.outputList)
+            #print (self.outputList)
             
         elif evalType == 3:
             avgList = sorted(inputList, key = lambda runner: runner[1])
@@ -35,7 +35,7 @@ class Evaluation1():
             self.average = sum ( runner[1] for runner in averageList) / pocet
             
             self.outputList = self.third()
-            print (self.outputList)
+            #print (self.outputList)
 
 
     def first(self):
