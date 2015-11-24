@@ -58,8 +58,9 @@ class Parser():
         for child in classresult_tag:
             if child.tag == 'ClassShortName':
                 csn = child.text
+                self.runners_data[csn] = []
             elif child.tag == 'PersonResult':
-                self.runners_data[csn] = self.get_personresult(child)
+                self.runners_data[csn].append(self.get_personresult(child))
 
     def get_personresult(self, classresult):
         """ Main handler for parsing data. Each tag is processed.
@@ -67,9 +68,9 @@ class Parser():
         person_info = {}
         for person_result in classresult:
             if person_result.tag == "Person":
-                self.parse_person_tag(person_info ,classresult)
+                self.parse_person_tag(person_info ,person_result)
             elif person_result.tag == "Club":
-                self.parse_club_tag(person_info, classresult)
+                self.parse_club_tag(person_info, person_result)
             elif person_result.tag == 'Result':
                 self.parse_result_tag(person_info, person_result)
         return person_info
@@ -106,7 +107,7 @@ class Parser():
                 self.add_finishtime(person_info, result)
             elif result.tag == 'Time':
                 person_info['time'] = result.text
-            elif result.tag == "ResultPosition":
+            elif result.tag == 'ResultPosition':
                 person_info['position'] = result.text
             elif result.tag == "CompetitorStatus":
                 person_info['status'] = result.attrib['value']
