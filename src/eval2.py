@@ -1,5 +1,5 @@
 class Evaluation2():
-    '''Evaluate each runner, third evaluation system
+    '''Evaluate each runner, second evaluation system
         inputList - [[runnerID, time in minutes, points]]
         interval - interval between each runner evaluation
         lastPoints - evaluation of the last runner in points'''
