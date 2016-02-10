@@ -1,0 +1,108 @@
+{% extends "web/base.html" %}
+{% load staticfiles %}
+{% block title_crumb %}Score{% endblock title_crumb %}
+{% block sidebar %}
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+      <li><a href="{% url 'web:index' %}">Overview <span class="sr-only">(current)</span></a></li>
+      <li><a href="{% url 'web:runs' %}">Runs</a></li>
+      <li><a class="dropdown-toggle" data-toggle="dropdown" href="#database">Database  <b class="caret"></b></a></li>
+    <li class="dropdown" id="database">
+        <ul class="dropdown-menu">
+            <li><a href="{% url 'web:databasePerson' %}">Person</a></li>
+            <li><a href="{% url 'web:databaseClub' %}">Club</a></li>
+            <li><a href="{% url 'web:databaseCategory' %}">Category</a></li>
+            <li><a href="{% url 'web:databaseRun' %}">Run</a></li>
+            <li><a href="{% url 'web:databaseResult' %}">Result</a></li>
+            <li><a href="{% url 'web:databasePosition' %}">Position</a></li>
+            <li><a href="{% url 'web:databaseSeason' %}">Season</a></li>
+        </ul>
+    </li>
+      <li class="active"><a href="{% url 'web:score' %}">Score</a></li>
+      <li><a href="{% url 'web:export' %}">Export</a></li>
+  </ul>
+</div>
+{% endblock sidebar %}
+
+{% block eval %}
+    <div style="padding-top:5em;" class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2">               
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <form action="eval1" method="get">
+                    <input type="submit" value="Eval1 - Time Ratio" />
+                </form>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <form action="eval2" method="get">
+                    <input type="submit" value="Eval2 - Fixed Interval" />
+                </form>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <form action="eval3" method="get">
+                    <input type="submit" value="Eval3 - Point Table" />
+                </form>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <form action="eval4" method="get">
+                    <input type="submit" value="Eval4 - Time Points" />
+                </form>
+            </div>
+        </div>
+        
+        <div id="input_01" class="row text-center" style="display:none; margin-top:2em;">
+            <div class="col-sm-4 col-md-4">
+                <input onclick="Show_eval('01_A');" type="button" value="A" />
+                <p>
+                    (cas vitaza / cas sutaziaceho) * [definovana hodnota]
+                </p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <input onclick="Show_eval('01_B');" type="button" value="B" />
+                <p>
+                    maximum(0, (2 - čas súťažiaceho/ čas víťaza ))*[hodnota definovaná vyhodnocovateľom]
+                </p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <input onclick="Show_eval('01_C');" type="button" value="C" />
+                <p>
+                    maximum(0, [hodnota definovaná vyhodnocovateľom] + [hodnota definovaná vyhodnocovateľom]*
+                    (priemerný čas súťažiacich -  čas súťažiaceho/priemerný čas súťažiacich)
+                    kde sa dá nastaviť percentuálny počet súťažiacich určených na výpočet priemerného času súťažiacich
+                </p>
+            </div>
+        </div>
+        
+        <div id="input_02" class="row" style="display:none;">
+            <div class="col-sm-12 col-md-12">
+                <p>
+                    Pevne stanovený interval bodového ohodnotenia, kde bude možné vyrátať body pre výhercu behu buď bodla počtu účastníkov behu alebo podľa počtu zúčastnených tímov * maximálny počet súťažiacich za tím.
+                    Bodový skok medzi jednotlivými poradiami: [hodnota definovaná vyhodnocovateľom]
+                    Počet bodov pridelených poslednému súťažiacemu:  [hodnota definovaná vyhodnocovateľom]
+                    Maximálny počet súťažiacich v tímoch:  [hodnota definovaná vyhodnocovateľom]
+                    Možnosť zvoliť zarátavanie bodov diskvalifikovaných súťažiacich ostatným účastníkom behu
+                </p>
+            </div>
+        </div>
+        
+        <div id="input_03" class="row" style="display:none;">
+            <div class="col-sm-12 col-md-12">
+                <p>
+                    Bodová tabuľka, v ktorej je možnosť napevno zadať bodové ohodnotenie jednotlivých poradí a to tak 
+                    že 1. miesto dostane počet bodov uvedených v 1. riadku tabuľky. V prípade, že je viacej súťažiacich než je 
+                    bodových hodnôt v tabuľke bude sa opakovať posledné bodové ohodnotenie v tabuľke
+                </p>
+            </div>
+        </div>
+        
+        <div id="input_04" class="row" style="display:none;">
+            <div class="col-sm-12 col-md-12">
+                <p>
+                    Časové bodovanie, je precentuálne ohodnotenie získaného času a to tak, že čas víťaza určuje 100% času. 
+                    V tabuľke percentuálneho ohodnotenia je možné pridávať jednotlivé percentá času a ich bodové ohod
+                </p>
+            </div>
+        </div>    
+                
+    </div>
+    
+{% endblock %}

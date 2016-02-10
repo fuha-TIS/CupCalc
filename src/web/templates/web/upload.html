@@ -1,0 +1,45 @@
+{% extends "web/base.html" %}
+{% block title_crumb %}Runs{% endblock title_crumb %}
+{% block sidebar %}
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+      <li><a href="{% url 'web:index' %}">Overview <span class="sr-only">(current)</span></a></li>
+    <li class="active"><a href="{% url 'web:runs' %}">Runs</a></li>
+    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#database">Database  <b class="caret"></b></a></li>
+    <li class="dropdown" id="database">
+        <ul class="dropdown-menu">
+            <li><a href="{% url 'web:databasePerson' %}">Person</a></li>
+            <li><a href="{% url 'web:databaseClub' %}">Club</a></li>
+            <li><a href="{% url 'web:databaseCategory' %}">Category</a></li>
+            <li><a href="{% url 'web:databaseRun' %}">Run</a></li>
+            <li><a href="{% url 'web:databaseResult' %}">Result</a></li>
+            <li><a href="{% url 'web:databasePosition' %}">Position</a></li>
+            <li><a href="{% url 'web:databaseSeason' %}">Season</a></li>
+        </ul>
+    </li>
+    <li><a href="{% url 'web:score' %}">Score</a></li>
+    <li><a href="{% url 'web:export' %}">Export</a></li>
+  </ul>
+</div>
+{% endblock sidebar %}
+
+{% block dnd %}
+<div class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ runs.as_p }}
+        <input type="submit" value="Choose selected" />
+        
+        <input type="button" value="Create new season" />
+    </form>
+    
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="submit" />
+    </form>
+    {% for xml in documents %}
+    <p>{{xml}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

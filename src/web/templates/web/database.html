@@ -1,0 +1,29 @@
+{% extends "web/base.html" %}
+{% load render_table from django_tables2 %}
+{% block title_crumb %}Database{% endblock title_crumb %}
+{% block sidebar %}
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+      <li><a href="{% url 'web:index' %}">Overview <span class="sr-only">(current)</span></a></li>
+    <li><a href="{% url 'web:runs' %}">Runs</a></li>
+    <li class="active"><a href="{% url 'web:database' %}">Database</a></li>
+    <li><a href="{% url 'web:score' %}">Score</a></li>
+    <li><a href="{% url 'web:export' %}">Export</a></li>
+  </ul>
+</div>
+{% endblock sidebar %}
+
+{% block db %}
+    
+    <div class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2">
+        {% render_table category  %}
+        {% render_table season  %}
+        {% render_table club  %}
+        {% render_table person  %}
+        {% render_table run  %}
+        {% render_table result  %}
+        {% render_table position  %}
+    </div>
+    
+
+{% endblock %}

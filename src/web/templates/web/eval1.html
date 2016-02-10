@@ -1,0 +1,45 @@
+{% extends "web/base.html" %}
+{% block title_crumb %}Runs{% endblock title_crumb %}
+{% block sidebar %}
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+      <li><a href="{% url 'web:index' %}">Overview</a></li>
+    <li><a href="{% url 'web:runs' %}">Runs</a></li>
+    <li><a href="{% url 'web:database' %}">Database</a></li>
+    <li class="active"><a href="{% url 'web:score' %}">Score</a></li>
+    <li><a href="{% url 'web:export' %}">Export</a></li>
+  </ul>
+</div>
+{% endblock sidebar %}
+
+{% block eval1 %}
+<div class="col-sm-9 col-md-offset-3 col-md-10 col-md-offset-2">
+    
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Choose a run:</label>
+        {{ form.runs }}        
+		<br /><br />
+		Type a :<br />
+        <label>(winner-time / time)*</label>
+        {{ form.value }}
+        <br />
+		Type b :<br />
+        <label>(0, (2 - time / winner_time))*</label>
+        {{ form.value2 }}
+       <br />
+	   Type c :<br />
+       <label>max{0 ,</label>{{ form.first}}<label> + </label>{{ form.last }}
+       <label>*(averaged_time - time / averaged_time), use averaged time of first: </label>
+       {{ form.percents }}<label>percentage of runners</label>
+       <br/><br />
+        <input type="submit" value="submit" />       
+        
+    </form>
+    
+    <p>
+        {{value}}
+    </p>
+    
+</div>
+{% endblock %}
