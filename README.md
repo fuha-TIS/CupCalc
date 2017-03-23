@@ -1,4 +1,4 @@
-# CupCalc
+# CupCalc TEST
 
 **Zadávateľ:** Dr. Richard Balogh
 
